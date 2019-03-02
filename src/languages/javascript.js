@@ -70,6 +70,11 @@ function(hljs) {
         begin: /^\s*['"]use (strict|asm)['"]/
       },
       {
+				className: 'operator',
+				relevance: 0,
+				begin: /=|\+=|-=|\*=|\=|%=|==|!=|<=|>=|<|>|\+|-|\*|%|\^/
+			},
+      {
         className: 'meta',
         begin: /^#!/, end: /$/
       },
