@@ -72,7 +72,7 @@ function(hljs) {
       {
 				className: 'op-comparison',
 				relevance: 0,
-				begin: /==|===|!=|!==/
+				begin: /===|==|!==|!=/
 			},
       {
 				className: 'op-bitwise',
