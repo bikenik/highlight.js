@@ -70,9 +70,39 @@ function(hljs) {
         begin: /^\s*['"]use (strict|asm)['"]/
       },
       {
-				className: 'operator',
+				className: 'op-comparison',
 				relevance: 0,
-				begin: /=|\+=|-=|\*=|\=|%=|==|!=|<=|>=|<|>|\+|-|\*|%|\^/
+				begin: /==|===|!=|!==/
+			},
+      {
+				className: 'op-bitwise',
+				relevance: 0,
+				begin: /\^/
+			},
+      {
+				className: 'op-assignment-compound',
+				relevance: 0,
+				begin: /\+=|-=|\*=|%=|\/=/
+			},
+      {
+				className: 'op-increment',
+				relevance: 0,
+				begin: /\+\+|--/
+			},
+      {
+				className: 'op-arithmetic',
+				relevance: 0,
+				begin: /%|\+|\*|\+|-|\//
+			},
+      {
+				className: 'op-relational',
+				relevance: 0,
+				begin: />=|<=|>|</
+			},
+      {
+				className: 'op-logical',
+				relevance: 0,
+				begin: /&&|\|\|/
 			},
       {
         className: 'meta',
